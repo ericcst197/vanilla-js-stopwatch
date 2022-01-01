@@ -7,6 +7,7 @@
 html, body {
     background-color:rgb(253, 148, 109);
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1{
@@ -16,26 +17,35 @@ h1{
     text-shadow: slategray 2px 2px 4px;
 }
 
-.stopwatch, .lap-list{
-    height:auto;
-    width:auto;
+.stopwatch{
+    height:100%;
+    width:60%;
     margin: 50px;
-    border:snow 1px solid;
+    border:snow 2px solid;
     border-radius: 10px;
+    padding: 20px 0 0 ;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-p{
+.stopwatch p{
     font-size: 30px;
-    padding: 2.5rem;
-
+    padding: 1rem;
 }
 
 span{
     font-size: 50px;
+    padding: 3px
+}
+
+.btn-div{
+    padding: 15px;
+    position: relative;
+    top: -10px;
 }
 
 .stopwatch button{
-    width: 150px;
+    width: 6rem;
     height: 50px;
     font-size: 20px;
     font-weight: 500;
@@ -43,7 +53,7 @@ span{
     background-color:rgb(253, 148, 109);
     border: white 1px solid;
     border-radius: 30px;
-    margin: 40px 10px;
+    margin: 1rem 0.5rem;
 }
 
 .stopwatch button:hover{
@@ -58,4 +68,31 @@ span{
     background-color: snow;
     transform: translate(-3px,2px);
     box-shadow: -5px 5px 15px 5px #a5b4b4;
+}
+
+.hidden{
+    display: none;
+}
+
+#lap-list{
+    width:40%;
+    border:snow 2px solid;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+}
+
+#lap-list p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#lap{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    margin-left: 10%;
+
 }

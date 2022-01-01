@@ -12,14 +12,17 @@
 <body>
     <h1>Vanilla Javascript Stopwatch</h1>
     <div class="stopwatch">
-        <p><span id="minute">00</span id="second">:<span>00</span>:<span id="millisec">000</span></p>
-        <button id="btn-start">START</button>
-        <button id="btn-lap">LAP</button>
-        <button id="btn-stop">STOP</button>
-        <button id="btn-reset">CLEAR</button>
+        <p><span id="min">00</span>:<span id="sec">00</span>:<span id="millisec">00</span></p>
+        <div class="btn-div">
+            <button id="btn-start">START</button>
+            <button id="btn-lap">LAP</button>
+            <button id="btn-stop">STOP</button>
+            <button id="btn-reset">CLEAR</button>
+        </div>
     </div>
-    <div id="lap-list">
 
+    <div class="hidden" id="lap-list">
+        <h2>Laps</h2>
     </div>
 
     <script src="script.js"></script>
